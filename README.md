@@ -1,4 +1,3 @@
-Rodriguez L. Martin
 Título: Curso de programacion full stack
 
 Subtitulo: Comisión A
