@@ -1,38 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+   
+    <head> <!-- en head tiene todo acerca del documento,
+        incluyendo su título y enlaces a scripts y hojas de estilos -->
+       <title>PRACTICA 1 </title> <!-- es el titulo que aparece en la pestaña-->
+       <meta charset="UTF-08">
+   </head>
+   
 
-<head>
-    <meta charset="UTF-8">
-    <title>Ejercicio1</title>
-</head>
-
-<body>
-    <script>
-        let valores = ["false", 2, "verdadero", "hola",
-                        "mundo", 3, "char"];
-        CantidadLet = 0;
-        let posMay, aux;
-        for (i = 0; i < valores.length; i++) {
-            if (CantidadLet < valores[i].length) {
-                CantidadLet = valores[i].length;
-                posMay = i
-            }
-        }
-        document.write(`El elemento mayor del vector es ${valores[posMay]}
-         y se encuentra en la posicion ${posMay + 1} del vector <br>`)
-        for (i = 0; i < valores.length; i++) {
-            for (j = i + 1; j < valores.length; j++) {
-                if (valores[i].length > valores[j].length) {
-                    aux = valores[i];
-                    valores[i] = valores[j]
-                    valores[j] = aux
-                }
-            }
-        }
-        const result = valores.filter(valores => valores.length != null);
-        document.write("Vector Ordenado de menor a mayor cantidad de letras: <br>")
-        document.write(result)
+   <body> <!-- en el body esta todo el cuerpo/contenido del documento-->
+      
+   
+    <script> // script: se puede introducir codigo javascript
+        document.writeln("Hola Mundo!<br>"); //escribe en el el documento.
+        document.writeln("Soy el primer Script");
     </script>
+
+
 </body>
+
+
 
 </html>
